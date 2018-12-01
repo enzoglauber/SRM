@@ -2,11 +2,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var Action = new Schema({
-  title: {
-    type: String
-  }
+  title: { type: String }
 }, {
-    collection: 'actions'
-  });
+  collection: 'actions'
+});
 
 module.exports = mongoose.model('Action', Action);

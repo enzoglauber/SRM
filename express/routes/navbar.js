@@ -18,9 +18,17 @@ navbarRoutes.route('/').get(function (req, res) {
   });
 });
 
+// Defined edit route
+navbarRoutes.route('/:id').get(function (req, res) {
+  var id = req.params.id;
+  Navbar.findById(id, function (err, navbar) {
+    res.json(navbar);
+  });
+});
+
 // Defined store route
 navbarRoutes.route('/add').post(function (req, res) {
-  var navbar = new Navbar(req.body);
+  var navbar = new Navbar(req.body);  
   navbar.save()
     .then(item => {
       res.status(200).json({ 'navbar': 'Navbar added successfully' });
@@ -30,13 +38,6 @@ navbarRoutes.route('/add').post(function (req, res) {
     });
 });
 
-// Defined edit route
-navbarRoutes.route('/edit/:id').get(function (req, res) {
-  var id = req.params.id;
-  Navbar.findById(id, function (err, navbar) {
-    res.json(navbar);
-  });
-});
 
 //  Defined update route
 navbarRoutes.route('/update/:id').post(function (req, res) {
