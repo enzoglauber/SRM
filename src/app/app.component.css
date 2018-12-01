@@ -1,0 +1,11 @@
+body {
+  background-color: #D0CECE;
+}
+html, body, main {
+  height: 100%;
+}
+
+main {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
