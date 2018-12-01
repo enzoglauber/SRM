@@ -124,5 +124,10 @@
       }
     }
   },
-  "defaultProject": "SRM"
+  "defaultProject": "SRM",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
