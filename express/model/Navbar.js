@@ -2,12 +2,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var Navbar = new Schema({
-  title: {
-    type: String
-  },
-  icon: {
-    type: String
-  }
+  title: { type: String },
+  icon: { type: String },
+  link: { type: String }
 }, {
   collection: 'navbars'
 });
