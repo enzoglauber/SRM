@@ -37,14 +37,19 @@ const server = app.listen(port, function () {
             link: 'home',
           }, 
           {
-            title: 'Home 1',
-            icon: 'fas fa-home',
-            link: 'home',
+            title: 'Painel de Gestão',
+            icon: 'fas fa-globe',
+            link: 'management-panel',
           }, 
           {
-            title: 'Home 2',
-            icon: 'fas fa-home',
-            link: 'home',
+            title: 'Conta Digital',
+            icon: 'fas fa-at',
+            link: 'digital-account',
+          }, 
+          {
+            title: 'Ant. de Recebimento',
+            icon: 'fas fa-history',
+            link: 'receipt',
           },
         ];
 

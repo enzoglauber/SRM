@@ -22,11 +22,33 @@ export class NavbarComponent implements OnInit {
   }
 
   list() {
-    this.data = [];
+    // this.data = [];
+    this.data = [
+      {
+        title: 'Home',
+        icon: 'fas fa-home',
+        link: 'home',
+      },
+      {
+        title: 'Painel de Gestão',
+        icon: 'fas fa-globe',
+        link: 'management-panel',
+      },
+      {
+        title: 'Conta Digital',
+        icon: 'fas fa-at',
+        link: 'digital-account',
+      },
+      {
+        title: 'Ant. de Recebimento',
+        icon: 'fas fa-history',
+        link: 'receipt',
+      },
+    ];
     this.NavbarService.list().subscribe(data => {
-      for (const item of data) {
-        this.data.push(item);
-      }
+      // for (const item of data) {
+      //   this.data.push(item);
+      // }
     });
   }
 }
