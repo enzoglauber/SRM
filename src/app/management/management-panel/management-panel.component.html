@@ -1,4 +1,4 @@
-<div class="container-fluid ml-4 ">
+<div class="container-fluid">
   <div class="row">
     <div class="col-6 title">
       <h2><fa-icon icon="globe" class="mr-3"></fa-icon> Painel de Gestão</h2>
@@ -7,7 +7,7 @@
       
       <div class="product float-right">
         <label for="" class="mr-1">Produto: </label>
-        <div class="btn-group  btn-lg new-btn">
+        <div class="btn-group  btn-lg new-btn pr-0">
           <button type="button" class="btn btn-default btn-lg dropdown-toggle blue" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Todos
@@ -22,7 +22,12 @@
       </div>
     </div>
   </div>
-  
-  <app-alerts></app-alerts>
-  <app-shortcuts></app-shortcuts>
+  <div class="row">
+    <div class="col-6">
+      <app-shortcuts></app-shortcuts>
+    </div>
+    <div class="col-6">
+      <app-alerts></app-alerts>
+    </div>
+  </div>
 </div>
