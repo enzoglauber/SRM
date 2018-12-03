@@ -9,3 +9,17 @@ main {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+.new-btn {
+  button {
+    border-radius: 0;
+    font-size: 16px;
+    &.blue {
+      background: transparent;
+      border: 1px solid #4997D1;
+      &:after {
+        color: #4997D1;
+      }
+    }
+  }
+}

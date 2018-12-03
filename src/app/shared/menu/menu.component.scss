@@ -1,0 +1,22 @@
+
+.navbar {
+  padding: 6px;
+  background-color: white !important;
+  border-left: 1px solid #8080807a;
+
+  .user {
+    .btn-primary {
+      background-color: #00233D ;
+      border: solid 1px #00233D ;
+    }
+    .btn-secondary {      
+      background-color: #4997D1 ;
+      border: solid 1px #4997D1 ;
+    }
+    span {
+      position: absolute;
+      top: 3px;
+      right: 3px;
+    }
+  }
+}

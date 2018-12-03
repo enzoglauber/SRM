@@ -10,9 +10,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MenuComponent } from './menu/menu.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; 
+
 @NgModule({
   imports: [
-    CommonModule, FormsModule, ReactiveFormsModule, RouterModule
+    CommonModule, FormsModule, ReactiveFormsModule, RouterModule, FontAwesomeModule
   ],
   declarations: [FormDebugComponent, NavbarComponent, MenuComponent, BreadcrumbComponent],
   providers: [CoreService, NavbarService], 

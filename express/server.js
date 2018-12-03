@@ -33,22 +33,22 @@ const server = app.listen(port, function () {
         let seed = [
           {
             title: 'Home',
-            icon: 'fas fa-home',
+            icon: 'home',
             link: 'home',
-          }, 
+          },
           {
             title: 'Painel de Gestão',
-            icon: 'fas fa-globe',
+            icon: 'globe',
             link: 'management-panel',
-          }, 
+          },
           {
             title: 'Conta Digital',
-            icon: 'fas fa-at',
+            icon: 'at',
             link: 'digital-account',
-          }, 
+          },
           {
             title: 'Ant. de Recebimento',
-            icon: 'fas fa-history',
+            icon: 'history',
             link: 'receipt',
           },
         ];

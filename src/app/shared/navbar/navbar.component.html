@@ -1,7 +1,18 @@
 <div id="side-navbar" class="sidenav">
+  <div class="input-group search">
+    <input type="text" class="form-control" placeholder="Pesquise Aqui" aria-label="Input search"
+      aria-describedby="btnGroupAddon">
+    <div class="input-group-append">
+      <div class="input-group-text" id="btnGroupAddon">
+        <fa-icon icon="search"></fa-icon></div>
+    </div>
+  </div>
+
   <ul id="slide-out" class="side-nav side-nav-light">
     <li *ngFor="let navbar of data">
-      <a [routerLink]="navbar.link"><i class="fas" [class]="navbar.icon"></i>{{navbar.title}}</a>
+      <a [routerLink]="navbar.link">
+        <fa-icon [icon]="navbar.icon"></fa-icon>{{navbar.title}}
+      </a>
     </li>
   </ul>
 </div>
