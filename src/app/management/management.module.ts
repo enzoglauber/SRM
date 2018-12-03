@@ -4,9 +4,11 @@ import { ManagementPanelComponent } from './management-panel/management-panel.co
 import { SharedModule } from '../shared/shared.module';
 import { AlertsComponent } from './alerts/alerts.component';
 import { ShortcutsComponent } from './shortcuts/shortcuts.component';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; 
 @NgModule({
   imports: [
-    CommonModule, SharedModule,
+    CommonModule, SharedModule, FontAwesomeModule
   ],
   declarations: [ManagementPanelComponent, AlertsComponent, ShortcutsComponent]
 })
