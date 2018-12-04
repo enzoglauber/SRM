@@ -6,6 +6,10 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Angular2TokenService } from 'angular2-token';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; 
+import { library } from '@fortawesome/fontawesome-svg-core'; 
+import { fas } from '@fortawesome/free-solid-svg-icons'; 
+library.add(fas);
 
 import { routing } from './app.routing';
 
@@ -24,9 +28,14 @@ import { ManagementModule } from './management/management.module';
     HttpModule,
     SharedModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     ManagementModule,
   ],
   providers: [Angular2TokenService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    library.add(fas);
+  }
+}

@@ -1,5 +1,38 @@
-<p>
-  management-panel works!
-  <app-alerts></app-alerts>
-  <app-shortcuts></app-shortcuts>
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 title">
+      <h2><fa-icon icon="globe" class="mr-3"></fa-icon> Painel de Gestão</h2>
+    </div>
+    <div class="col-6 clearfix">
+      
+      <div class="product float-right">
+        <label for="" class="mr-1">Produto: </label>
+      
+        <div class="btn-group btn-lg new-btn pr-0" dropdown placement="bottom left" container="body">
+          <button id="product" dropdownToggle type="button" class="btn btn-default dropdown-toggle blue pl-5  pr-5" aria-controls="dropdown-basic">
+            Todos <span class="caret"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+            <li role="menuitem">
+              <a class="dropdown-item" href="#">Produto 1</a>
+            </li>
+            <li role="menuitem">
+              <a class="dropdown-item" href="#">Produto 2</a>
+            </li>
+            <li role="menuitem">
+              <a class="dropdown-item" href="#">Produto 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <app-shortcuts></app-shortcuts>
+    </div>
+    <div class="col-6">
+      <app-alerts></app-alerts>
+    </div>
+  </div>
+</div>

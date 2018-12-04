@@ -31,20 +31,25 @@ const server = app.listen(port, function () {
     if (err) { console.log(err) } else {
       if(!navbars.length) {        
         let seed = [
+          // {
+          //   title: 'Home',
+          //   icon: 'home',
+          //   link: 'home',
+          // },
           {
-            title: 'Home',
-            icon: 'fas fa-home',
-            link: 'home',
-          }, 
+            title: 'Painel de Gestão',
+            icon: 'globe',
+            link: 'management-panel',
+          },
           {
-            title: 'Home 1',
-            icon: 'fas fa-home',
-            link: 'home',
-          }, 
+            title: 'Conta Digital',
+            icon: 'at',
+            link: 'digital-account',
+          },
           {
-            title: 'Home 2',
-            icon: 'fas fa-home',
-            link: 'home',
+            title: 'Ant. de Recebimento',
+            icon: 'history',
+            link: 'receipt',
           },
         ];
 
@@ -61,8 +66,8 @@ const server = app.listen(port, function () {
       if (!actions.length) {
         let seed = [
           { title: 'Action 1' },
-          { title: 'Action 1' },
-          { title: 'Action 1' },
+          { title: 'Action 2' },
+          { title: 'Action 3' },
         ];
 
         seed.forEach(function (item, index) {

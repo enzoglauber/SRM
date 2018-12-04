@@ -1,3 +1,39 @@
-<p>
-  alerts works!
-</p>
+<div class="card shadow-lg">
+  <div class="card-header clearfix bg-white">
+    <h3 class="text-primary">Alertas</h3> <span class="float-right mt-1">Últimos 5 dias</span>
+  </div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">23 Notas Canceladas</li>
+      <li class="list-group-item"> 13 Notas Canceladas
+        <div class="float-right">
+          <div class="btn-group new-btn" dropdown placement="bottom left" container="body">
+            <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle blue" aria-controls="dropdown-basic">
+              Ações <span class="caret"></span>
+            </button>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+              <li  role="menuitem" *ngFor="let action of actions">
+                <a class="dropdown-item" href="#">{{action.title}}</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </li>
+      <li class="list-group-item">7 Assinaturas Digital
+        <div class="float-right">
+          <div class="btn-group new-btn" dropdown placement="bottom left" container="body">
+            <button id="button-basic" dropdownToggle type="button" class="btn btn-default dropdown-toggle blue" aria-controls="dropdown-basic">
+              Ações <span class="caret"></span>
+            </button>
+            <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+              <li role="menuitem" *ngFor="let action of actions">
+                <a class="dropdown-item" href="#">{{action.title}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
