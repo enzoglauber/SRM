@@ -7,17 +7,22 @@
       
       <div class="product float-right">
         <label for="" class="mr-1">Produto: </label>
-        <div class="btn-group  btn-lg new-btn pr-0">
-          <button type="button" class="btn btn-default btn-lg dropdown-toggle blue" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Todos
+      
+        <div class="btn-group btn-lg new-btn pr-0" dropdown placement="bottom left" container="body">
+          <button id="product" dropdownToggle type="button" class="btn btn-default dropdown-toggle blue pl-5  pr-5" aria-controls="dropdown-basic">
+            Todos <span class="caret"></span>
           </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Todos</a>
-            <a class="dropdown-item" href="#">Produto 1</a>
-            <a class="dropdown-item" href="#">Produto 2</a>
-            <a class="dropdown-item" href="#">Produto 3</a>
-          </div>
+          <ul *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+            <li role="menuitem">
+              <a class="dropdown-item" href="#">Produto 1</a>
+            </li>
+            <li role="menuitem">
+              <a class="dropdown-item" href="#">Produto 2</a>
+            </li>
+            <li role="menuitem">
+              <a class="dropdown-item" href="#">Produto 3</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

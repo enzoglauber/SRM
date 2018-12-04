@@ -11,15 +11,22 @@ main {
 }
 
 .new-btn {
-  button {
+  button, a {
     border-radius: 0;
     font-size: 16px;
     &.blue {
       background: transparent;
+      color: #212529;
       border: 1px solid #4997D1;
       &:after {
         color: #4997D1;
       }
+    }
+  }
+  a {
+    color: #212529; 
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

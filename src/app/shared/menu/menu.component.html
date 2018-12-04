@@ -9,17 +9,22 @@
 
     <div class="economic mr-2">
       <label for="" class="mr-2">Grupo Econômico: </label>
-      <div class="btn-group  btn-lg new-btn">
-        <button type="button" class="btn btn-default btn-lg dropdown-toggle blue" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Visão agregada 1
+      <div class="btn-group btn-lg new-btn" dropdown placement="bottom left" container="body">
+        <button id="vision" dropdownToggle type="button" class="btn btn-default btn-lg dropdown-toggle blue"
+          aria-controls="dropdown-basic">
+          Visão agregada 1 <span class="caret"></span>
         </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Visão agregada 1</a>
-          <a class="dropdown-item" href="#">Visão agregada 2</a>
-          <a class="dropdown-item" href="#">Visão agregada 3</a>
-          <a class="dropdown-item" href="#">Visão agregada 4</a>
-        </div>
+        <ul *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+          <li role="menuitem">
+            <a class="dropdown-item" href="#">Visão agregada 1</a>
+          </li>
+          <li role="menuitem">
+            <a class="dropdown-item" href="#">Visão agregada 2</a>
+          </li>
+          <li role="menuitem">
+            <a class="dropdown-item" href="#">Visão agregada 3</a>
+          </li>
+        </ul>
       </div>
     </div>
 

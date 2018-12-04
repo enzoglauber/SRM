@@ -31,11 +31,11 @@ const server = app.listen(port, function () {
     if (err) { console.log(err) } else {
       if(!navbars.length) {        
         let seed = [
-          {
-            title: 'Home',
-            icon: 'home',
-            link: 'home',
-          },
+          // {
+          //   title: 'Home',
+          //   icon: 'home',
+          //   link: 'home',
+          // },
           {
             title: 'Painel de Gestão',
             icon: 'globe',
@@ -66,8 +66,8 @@ const server = app.listen(port, function () {
       if (!actions.length) {
         let seed = [
           { title: 'Action 1' },
-          { title: 'Action 1' },
-          { title: 'Action 1' },
+          { title: 'Action 2' },
+          { title: 'Action 3' },
         ];
 
         seed.forEach(function (item, index) {
