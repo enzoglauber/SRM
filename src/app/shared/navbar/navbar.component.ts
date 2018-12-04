@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation, OnInit, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
 import { NavbarService } from '../../shared/resources/navbar.service';
-import { ActionService } from '../../shared/resources/action.service';
+
 
 @Component({
   selector: 'app-navbar',
@@ -13,8 +13,7 @@ export class NavbarComponent implements OnInit {
   private data: Array<any> = [];
 
   constructor(
-    private NavbarService: NavbarService,
-    private ActionService: ActionService,
+    private NavbarService: NavbarService
   ) { }
 
   ngOnInit() {

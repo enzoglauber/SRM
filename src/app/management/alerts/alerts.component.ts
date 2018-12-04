@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
+import { ActionService } from '../../shared/resources/action.service';
 
 @Component({
   selector: 'app-alerts',
@@ -8,9 +9,22 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class AlertsComponent implements OnInit {
 
-  constructor() { }
+  private actions: Array<any> = [];
+
+  constructor(
+    private ActionService: ActionService
+  ) { }
 
   ngOnInit() {
+    this.list();
   }
 
+  list() {
+    this.actions = [];
+    this.ActionService.list().subscribe(data => {
+      for (const item of data) {
+        this.actions.push(item);
+      }
+    });
+  }
 }
